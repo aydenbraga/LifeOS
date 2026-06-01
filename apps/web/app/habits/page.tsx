@@ -7,11 +7,11 @@ export default function RoutineHub() {
         <div className="space-y-1">
           <h1 className="text-4xl font-bold premium-text-gradient">Life Planning</h1>
           <p className="text-lifeos-muted">Architecting the daily rhythm of a high-performance life.</p>
-        </div>>
+        </div>
         <div className="flex gap-3">
           <button className="glass-card px-4 py-2 text-sm font-medium hover:bg-white/10">Weekly Review</button>
           <button className="bg-lifeos-accent px-4 py-2 rounded-xl text-sm font-medium text-white shadow-lg shadow-indigo-500/20">+ New Habit</button>
-        </div>>
+        </div>
       </header>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -25,7 +25,7 @@ export default function RoutineHub() {
             <HabitRow name="Basketball Training" streak={5} completed={false} />
             <HabitRow name="Reading" streak={3} completed={false} />
             <HabitRow name="Stretching" streak={8} completed={true} />
-          </div>>
+          </div>
 
           <div className="glass-panel p-6 space-y-4 bg-indigo-500/5 border-indigo-500/20">
             <div className="flex justify-between items-center">
@@ -35,8 +35,8 @@ export default function RoutineHub() {
             <p className="text-xs text-lifeos-muted leading-relaxed">
               Your consistency is up 12% from last week. Maintaining the "Bible Study" streak is positively impacting your mood scores.
             </p>
-          </div>>
-        </div>>
+          </div>
+        </div>
 
         {/* Middle/Right Col: Unified Calendar & Planning */}
         <div className="lg:col-span-2 space-y-8">
@@ -47,8 +47,8 @@ export default function RoutineHub() {
                 <span className="text-xs px-2 py-1 rounded-full bg-lifeos-accent text-white">Today</span>
                 <span className="text-xs px-2 py-1 rounded-full bg-white/5 text-lifeos-muted">Tomorrow</span>
                 <span className="text-xs px-2 py-1 rounded-full bg-white/5 text-lifeos-muted">Weekly</span>
-              </div>>
-            </div>>
+              </div>
+            </div>
 
             <div className="space-y-3">
               <CalendarItem time="06:00 AM" event="Prayer & Devotional" category="Faith" color="bg-amber-500" />
@@ -58,7 +58,7 @@ export default function RoutineHub() {
               <CalendarItem time="03:00 PM" event="OS Theory Lecture" category="Study" color="bg-blue-500" />
               <CalendarItem time="06:00 PM" event="Basketball Skill Work" category="Sport" color="bg-orange-500" />
               <CalendarItem time="09:00 PM" event="Daily Review & Planning" category="Personal" color="bg-indigo-500" />
-            </div>>
+            </div>
           </section>
 
           {/* AI Planning Assistant */}
@@ -69,13 +69,13 @@ export default function RoutineHub() {
             </div>]
             <div className="glass-panel p-6 space-y-4 bg-gradient-to-br from-indigo-800/30 to-transparent">
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded-lg bg-lifeos-accent flex items-center justify-center text-sm">📅</div>>
+                <div className="w-8 h-8 rounded-lg bg-lifeos-accent flex items-center justify-center text-sm">📅</div>
                 <div className="space-y-2">
                   <p className="text-sm leading-relaxed text-lifeos-text">
                     "I've noticed your <span className="text-white font-semibold">Basketball Training</span> usually happens at 6 PM, but your <span className="text-white font-semibold">Study Load</span> is peaking this Wednesday. I suggest shifting your deep work to 7 AM on Wednesday to free up mental space."
                   </p>
-                </div>>
-              </div>>
+                </div>
+              </div>
               <div className="flex gap-3">
                 <button className="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs hover:bg-white/10 transition-all">
                   Ignore Suggestion
@@ -83,12 +83,12 @@ export default function RoutineHub() {
                 <button className="px-4 py-2 rounded-xl bg-lifeos-accent text-white text-xs font-medium hover:bg-indigo-600 transition-all">
                   Apply Optimization
                 </button>
-              </div>>
-            </div>>
+              </div>
+            </div>
           </section>
-        </div>>
-      </div>>
-    </div>>
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -98,14 +98,14 @@ function HabitRow({ name, streak, completed }: { name: string, streak: number, c
       <div className="flex items-center gap-3">
         <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all ${completed ? 'bg-lifeos-accent border-lifeos-accent' : 'border-white/20'}`}>
           {completed && <span className="text-[10px] text-white">✓</span>}
-        </div>>
+        </div>
         <span className="text-sm font-medium">{name}</span>
-      </div>>
+      </div>
       <div className="flex items-center gap-1 text-xs font-bold">
         <span className="text-orange-400">🔥</span>
         <span>{streak}</span>
-      </div>>
-    </div>>
+      </div>
+    </div>
   );
 }
 
@@ -117,9 +117,9 @@ function CalendarItem({ time, event, category, color }: { time: string, event: s
         <div className="flex items-center gap-3">
           <div className={`w-1 h-8 rounded-full ${color}`} />
           <span className="font-medium text-sm">{event}</span>
-        </div>>
-      </div>>
+        </div>
+      </div>
       <span className="text-xs text-lifeos-muted">{category}</span>
-    </div>>
+    </div>
   );
 }

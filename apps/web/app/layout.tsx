@@ -22,7 +22,7 @@ export default function RootLayout({
           <aside className="w-64 h-full border-r border-white/10 bg-black/20 backdrop-blur-xl flex flex-col p-6 gap-8">
             <div className="text-xl font-bold premium-text-gradient">
               LifeOS
-            </div>>
+            </div>
 
             <nav className="flex flex-col gap-2">
               <SidebarLink active label="Dashboard" icon="🏠" />
@@ -37,13 +37,13 @@ export default function RootLayout({
             <div className="mt-auto p-4 glass-panel text-xs text-lifeos-muted">
               Chief-of-Staff v1.0.0<br />
               System Status: Optimal
-            </div>>
+            </div>
           </aside>
 
           <main className="flex-1 h-full overflow-y-auto relative">
             {children}
           </main>
-        </div>>
+        </div>
       </body>
     </html>
   );
@@ -54,6 +54,6 @@ function SidebarLink({ label, icon, active = false }: { label: string, icon: str
     <div className={`flex items-center gap-3 px-3 py-2 rounded-lg cursor-pointer transition-all ${active ? 'bg-lifeos-accent text-white' : 'text-lifeos-muted hover:bg-white/5 hover:text-white'}`}>
       <span>{icon}</span>
       <span className="text-sm font-medium">{label}</span>
-    </div>>
+    </div>
   );
 }
