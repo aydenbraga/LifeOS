@@ -62,7 +62,7 @@ export default function HealthGymHub() {
               <h3 className="text-xl font-semibold">Athletic Metrics</h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <PerformanceCard label="Vertical Jump" value="28.5\"" delta="+0.5\"" />
+              <PerformanceCard label="Vertical Jump" value="28.5 in" delta="+0.5 in" />
               <PerformanceCard label="40yd Sprint" value="4.62s" delta="-0.05s" />
               <PerformanceCard label="Agility T-Test" value="11.2s" delta="0.0s" />
               <PerformanceCard label="Max Bench" value="110kg" delta="+2.5kg" />
