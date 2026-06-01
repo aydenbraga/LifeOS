@@ -13,6 +13,6 @@
       "@/*": ["apps/web/app/*"]
     }
   },
-  "include": ["apps/web/**/*.ts", "apps/web/**/*.tsx"],
+  "include": ["apps/web/**/*.ts", "apps/web/**/*.tsx", "packages/**/*.ts"],
   "exclude": ["node_modules"]
 }
