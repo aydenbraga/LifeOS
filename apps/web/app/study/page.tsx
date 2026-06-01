@@ -33,7 +33,7 @@ export default function StudyHub() {
             <div className="flex justify-between items-center">
               <h3 className="text-lg font-semibold">Focus Timer</h3>
               <span className="text-xs font-mono text-lifeos-accent">Pomodoro</span>
-            </div]
+            </div>
             <div className="text-center py-4">
               <div className="text-5xl font-bold font-mono tracking-tighter">
                 {Math.floor(timer / 60)}:{(timer % 60).toString().padStart(2, '0')}
@@ -64,8 +64,8 @@ export default function StudyHub() {
               <div className="flex gap-2">
                 <span className="text-xs px-2 py-1 rounded-full bg-white/5 border border-white/10 text-lifeos-muted">All</span>
                 <span className="text-xs px-2 py-1 rounded-full bg-lifeos-accent/20 border border-lifeos-accent/30 text-lifeos-accent">Priority</span>
-              </div]
-            </div]
+              </div>
+            </div>
 
             <div className="space-y-3">
               <AssignmentRow title="Algorithm Analysis Report" course="FIT1008" due="3 Days" priority="High" weight="15%" />
@@ -80,7 +80,7 @@ export default function StudyHub() {
             <div className="flex justify-between items-center px-1">
               <h3 className="text-xl font-semibold">AI Study Assistant</h3>
               <span className="text-xs text-lifeos-accent animate-pulse">Thinking...</span>
-            </div]
+            </div>
             <div className="glass-panel p-6 space-y-4 bg-gradient-to-br from-slate-800/40 to-transparent">
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 rounded-lg bg-lifeos-accent flex items-center justify-center text-sm">🧠</div>
@@ -112,7 +112,7 @@ function CourseCard({ name, code, progress, color }: { name: string, code: strin
   return (
     <div className="glass-card p-4 space-y-3">
       <div className="flex justify-between items-center">
-        <div>
+        <div className="flex flex-col">
           <span className="text-xs font-mono text-lifeos-muted">{code}</span>
           <h4 className="font-medium text-sm">{name}</h4>
         </div>
@@ -132,7 +132,7 @@ function AssignmentRow({ title, course, due, priority, weight }: { title: string
     <div className="glass-card p-4 flex items-center justify-between hover:border-white/20 transition-all">
       <div className="flex items-center gap-4">
         <div className="w-1 h-8 rounded-full bg-lifeos-accent" />
-        <div>
+        <div className="flex flex-col">
           <span className="block font-medium text-sm">{title}</span>
           <span className="text-xs text-lifeos-muted">{course} • {weight} of grade</span>
         </div>
