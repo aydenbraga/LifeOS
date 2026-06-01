@@ -79,7 +79,7 @@ export default function FinanceGoalsHub() {
               />
               <GoalCard
                 category="Fitness"
-                title="Vertical Jump 30\""
+                title="Vertical Jump 30 in"
                 target="30 inch"
                 progress={85}
                 milestones={2}
