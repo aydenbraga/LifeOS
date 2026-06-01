@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useState } from 'react';
 
 export default function StudyHub() {
   const [timer, setTimer] = useState(25 * 60);
