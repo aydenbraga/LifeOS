@@ -19,6 +19,6 @@
       "@/*": ["./app/*"]
     }
   },
-  "include": ["app uma-web/**/*.ts", "app/**/*.tsx"],
+  "include": ["app/**/*.ts", "app/**/*.tsx", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
